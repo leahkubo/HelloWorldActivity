@@ -21,12 +21,12 @@ class MainActivity : AppCompatActivity() {
         displayTextView = findViewById(R.id.displayTextView)
         clickMeButton = findViewById(R.id.clickMeButton)
         nameEditText = findViewById(R.id.nameEditText)
-        var name = nameEditText.text.toString()
+        var name : String
+
+        clickMeButton.setOnClickListener { name = nameEditText.text.toString()
+            displayTextView.text = "Hello $name!" }
 
 
-
-
-        
         // Respond to button click event per specifications
 
 
