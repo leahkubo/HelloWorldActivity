@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         displayTextView = findViewById(R.id.displayTextView)
         clickMeButton = findViewById(R.id.clickMeButton)
         nameEditText = findViewById(R.id.nameEditText)
+        var name = nameEditText.text.toString()
+
 
 
 
